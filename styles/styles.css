@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+  }
+
+  
+figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color:yellowgreen;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
+
+
+
+
+
+
