@@ -1,8 +1,40 @@
 body {
     background-color: lightcyan;
+    
   }
 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
   
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: white;
+  }
+
+  .navigation {
+    background-color: white;
+  }
+
+  .active{
+    text-decoration: underline;
+  
+  }
 figure {
   border: 1px #cccccc solid;
   padding: 4px;
@@ -10,12 +42,26 @@ figure {
 }
 
 figcaption {
-  background-color:yellowgreen;
+  background-color:orange;
   color: white;
   font-style: italic;
   padding: 2px;
   text-align: center;
 }
+
+.p1 {
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+  font-size: larger;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
 
 
 
