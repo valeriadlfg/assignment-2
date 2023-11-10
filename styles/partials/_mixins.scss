@@ -1,0 +1,21 @@
+@mixin button ($color) {
+    background-color: $color;
+    color:white;
+    border: none;
+    border-radius: 7px;
+    padding: 3px;
+    width: 150px;
+    &:hover {
+        background-color: darken($color, 10%);
+        cursor: pointer;
+    }
+}
+
+@mixin orange() {
+    color:orange;
+    font-size: 20px;
+    font-family: typography.$primary-font;
+    font-style: italic;
+
+
+}

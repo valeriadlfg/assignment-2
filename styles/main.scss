@@ -1,0 +1,111 @@
+@use "./vendor/normalize";
+@use "./partials/colors";
+@use "./partials/mixins";
+@use "./partials/typography";
+
+
+
+.navigation {
+    background-color: colors.$primary;
+    padding: 5px;
+    ul {
+     li {
+       display: inline-block;
+       a {
+        @include mixins.orange();
+        font-family: typography.$primary-font;
+         text-decoration: none;
+         
+       } 
+     }
+    }
+   }
+
+  .main_btn {
+    @include mixins.button(colors.$orange);
+  }
+  
+  .secondary_btn {
+    @include mixins.button (colors.$navy);
+
+  }
+
+  
+  .intro{
+    p {
+      font-size: 40px;
+      text-align: center;
+      font-family: typography.$heading;
+    }
+  }
+  
+  .middle{
+    font-family: typography.$tittle
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: white;
+  }
+
+  .active{
+    text-decoration: underline;
+  
+  }
+figure {
+  border: 1px #cccccc solid;
+  padding: 4px;
+  margin: auto;
+}
+
+figcaption {
+  background-color:orange;
+  color: white;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+
+
+
+
+
+
+//big screen and up
+@media (min-width:1024px) {
+    .navigation {
+        background-color: rgb(61, 64, 71);
+    }
+    
+    a {
+        font-size: 15px;
+        } 
+    }
